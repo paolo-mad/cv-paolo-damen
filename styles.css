@@ -1,0 +1,162 @@
+html {
+  background-color: rgb(255, 255, 255);
+  height: 120vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #dbf6ff 100%);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  width: 595px;
+  height: 842px;
+  margin: 50px auto;
+  position: relative;
+  border: 1px solid rgb(188, 186, 186);
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "links links";
+  grid-template-rows: 110px 1fr 80px;
+  grid-template-columns: 320px 250px;
+  position: relative;
+}
+
+.container > header {
+  grid-area: header;
+  position: relative;
+  height: 400px;
+}
+
+header img {
+  width: 66px;
+  height: 62px;
+  top: 40px;
+  left: 75px;
+  position: absolute;
+  transform: rotate(-7.353deg);
+  border-radius: 15px;
+  border: 4px solid rgba(105, 56, 246, 0.44);
+  background: url(<path-t-image>),
+    lightgray -2.224px -4.562px / 100% 109.82% no-repeat;
+}
+
+header h1 {
+  font-size: 36px;
+  text-align: center;
+  position: absolute;
+  margin-left: 180px;
+  margin-top: 50px;
+}
+
+header h3 {
+  color: #6938f6;
+  position: absolute;
+  margin-left: 182px;
+  margin-top: 90px;
+}
+
+.container > main {
+  font-size: 12px;
+  font-weight: 600;
+  grid-area: main;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+main img,
+h2 {
+  display: inline-block;
+}
+
+main img {
+  margin-right: 2px;
+  margin-bottom: -3px;
+}
+
+main h2 {
+  font-weight: 400;
+}
+
+main p {
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.container > aside {
+  border: solid 5px rgba(104, 56, 246, 0.469);
+  border-radius: 15px;
+  grid-area: aside;
+  margin-top: 30px;
+  width: 200px;
+  margin-left: 15px;
+}
+
+h3,
+img,
+li,
+p {
+  display: inline-block;
+  list-style: none;
+}
+
+li::before {
+  content: "O";
+  font-weight: bolder;
+  font-size: 12px;
+  padding: 2px;
+  color: #6938f6;
+}
+
+.list-sidebar {
+  display: flex;
+  margin-left: -30px;
+}
+
+aside img {
+  margin-left: 8px;
+  margin-right: -8px;
+  margin-bottom: -3px;
+  margin-top: 6px;
+}
+
+aside h3,
+p {
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-right: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.container > footer {
+  grid-area: links;
+  position: relative;
+}
+
+footer ul {
+  list-style-type: none;
+  margin-left: 8px;
+}
+
+footer li {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 4px;
+  margin-left: 28px;
+  background-color: rgb(219, 216, 216);
+  border-radius: 50%;
+  border: solid 4px #6938f6;
+}
+
+a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #6938f6;
+}
