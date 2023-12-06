@@ -34,8 +34,8 @@ body {
 }
 
 header img {
-  width: 66px;
-  height: 62px;
+  width: 76px;
+  height: 72px;
   top: 40px;
   left: 75px;
   position: absolute;
@@ -76,7 +76,8 @@ h2 {
 
 main img {
   margin-right: 2px;
-  margin-bottom: -3px;
+  margin-bottom: -1px;
+  width: 15px;
 }
 
 main h2 {
@@ -121,8 +122,9 @@ li::before {
 aside img {
   margin-left: 8px;
   margin-right: -8px;
-  margin-bottom: -3px;
+  margin-bottom: -2px;
   margin-top: 6px;
+  width: 15px;
 }
 
 aside h3,
